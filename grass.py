@@ -2,13 +2,13 @@ from pico2d import load_image
 
 
 class Grass:
-    def __init__(self):
-        self.image1 = load_image('grass.png')
-        self.image2 = load_image('grass.png')
+    def __init__(self, x=400, y=30):
+        self.image = load_image('grass.png')
+        self.x = x
+        self.y = y
 
     def draw(self):
-        self.image1.draw(400, 30)
-        self.image2.draw(400, 10)
+        self.image.draw(400, 30)
 
     def update(self):
         pass
